@@ -1,0 +1,2 @@
+dir=/home/seed/Desktop/parallel-matrix-processor-c/matrices
+
