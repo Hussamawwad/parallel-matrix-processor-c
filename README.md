@@ -89,6 +89,9 @@ Results sent via pipes
 🔹 Future Improvements
 
 Thread-based implementation (pthreads)
+
 GUI interface
+
 GPU acceleration (CUDA/OpenCL)
+
 Dynamic process pool optimization
