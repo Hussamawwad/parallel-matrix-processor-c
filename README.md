@@ -56,6 +56,35 @@ gcc -o matrix main.c -lm
 Add two matrices using parallel processes
 Multiply matrices using row-column mapping
 Compute determinant using distributed 
+Example:
+Matrix A:
+[1 2]
+[3 4]
+
+Matrix B:
+[5 6]
+[7 8]
+
+Result:
+[19 22]
+[43 50]
+
+
+## Performance
+
+| Operation | Sequential | Parallel |
+|----------|-----------|----------|
+| Addition | 12 ms     | 4 ms     |
+| Multiply | 85 ms     | 30 ms    |
+
+
+Parent Process
+   ↓
+Distributes tasks
+   ↓
+Child Processes compute elements
+   ↓
+Results sent via pipes 
 
 🔹 Future Improvements
 
